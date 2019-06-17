@@ -1,0 +1,11 @@
+sudo: required
+servicies: 
+  - docker
+
+before_install:
+  - docker build -t sudheerasl/docker-react Dockerfile.dev .
+
+
+  script:
+    - docker run sudheerasl/docker-react npm run test -- --Coverage
+    
