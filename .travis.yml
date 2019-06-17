@@ -6,7 +6,7 @@ servicies:
   - docker
 
 before_install:
-  - docker build -t sudheerasl/docker-react Dockerfile.dev .
+  - docker build -t sudheerasl/docker-react -f Dockerfile.dev .
 
 
 script:
