@@ -1,3 +1,4 @@
+language: generic
 sudo: required
 servicies: 
   - docker
@@ -8,4 +9,3 @@ before_install:
 
   script:
     - docker run sudheerasl/docker-react npm run test -- --Coverage
-    
