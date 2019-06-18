@@ -10,4 +10,4 @@ before_install:
 
 
 script:
-  - docker run sudheerasl/docker-react npm run test -- --Coverage
+  - docker run sudheerasl/docker-react npm run test -- --coverage
